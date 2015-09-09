@@ -1,0 +1,6 @@
+Addison Correll's Journal 0909
+	
+	Explain what you did yesterday (with github) and why:
+Yesterday, we first created our own account for Linux that we can use to log in every time. We then began creating our own directory that we would be able to use for journals, allowing us to write them in the terminal instead of 
+GitHub by connecting our GitHub repository with Konsole. We used multiple commands to do this, such as mkdir to create the new directory, cd to change the directory, git config to set up GitHub on the Konsole, and pico/nano to edit 
+each journal, such as the one I am writing right now.
