@@ -1,0 +1,10 @@
+Addison Correll's Journal 0910
+
+	Explain what we did yesterday (with GitHub) and why.
+Yesterday, we began modifying our own directory that we would be able to use for journals, allowing us to write them in the terminal instead of GitHub by connecting our GitHub repository with Konsole. We used multiple commands to do this, such as mkdir to create the new 
+directory, cd to change the directory, git commands to set up GitHub on the Konsole, and pico/nano to edit each journal, such as the one I am writing right now.
+	More specifically, describe the git steps you will do everytime.
+1. First, we open our directory for our journals by typing <cd lastname_period_journals>.
+2. Next, we open a new journal (this also works to edit an existing journal) by typing <pico lastname_period_date.txt> or by typing <nano lastname_period_date.txt>.
+3. We then write down our journal and save it using Ctrl X.
+4. We then type <git add *> to save our journal to GitHub.
