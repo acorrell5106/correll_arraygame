@@ -7,4 +7,7 @@ directory, cd to change the directory, git commands to set up GitHub on the Kons
 1. First, we open our directory for our journals by typing <cd lastname_period_journals>.
 2. Next, we open a new journal (this also works to edit an existing journal) by typing <pico lastname_period_date.txt> or by typing <nano lastname_period_date.txt>.
 3. We then write down our journal and save it using Ctrl X.
-4. We then type <git add *> to save our journal to GitHub.
+4. We then type <git add *> or type <git add lastname_period_date.txt> to save our journal to GitHub.
+5. We then type <git commit -m "message> to prepare the file, as well as typing the message that needs to go along with the journal.
+6. Finally, we type <git push -u origin master> to send it to GitHub and to finalize the process.
+

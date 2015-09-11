@@ -1,11 +1,11 @@
 body {
-	background-color: black;
+	background-color: #e8d20c;
 	margin: 0px;
-	color: #E8D20C;
+	color: #2D44f7;
 }
 
 .container {
-	background-color: black;
+	background-color: #e8d20c;
 	height: 850 px;
 	margin-left: auto;
 	margin-right: auto;
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-	background-color: #2D44F7;
+	background-color: #e8d20c;
 	height: 100px;
 	width: 700px;
 }
@@ -52,7 +52,7 @@ a:hover {
 }
 
 .main {
-	background-color: black;
+	background-color: #e8d20c;
 	float: left;
 	font-family: sans-serif;
 	height: 595px;
