@@ -11,3 +11,19 @@ Begin:
 		Draw backwards
 		Turn 90 degrees
 			
+	Do 2 times
+		Draw backwards
+		Turn 90 degrees
+
+	Do 3 times
+		Draw forward
+		Turn 90 degrees		
+
+	Do 2 times
+		Draw down
+		Turn 90 degrees
+
+	Do 2 times
+		Draw down
+		Turn 90 degrees
+End:
