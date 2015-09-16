@@ -57,19 +57,21 @@ a:hover {
 	font-family: sans-serif;
 	/*height: 595px;*/
 	margin-bottom: 50px;
+	min-height: 100px;
 	width: 545px;
 }
 
 aside {
 	background-color: #e8d20c;
 	float: right;
-	height: 595px;
+	/*height: 545px;*/
 	width: 150px;
 }
 
 footer {
+	float: left;
 	background-color: #2D44F7;
 	clear: both;
-	height: 100px;
+	min-height: 100px;
 	width: 700px;
 }
