@@ -1,0 +1,18 @@
+Addison Correll's Journal 0916
+
+	What are the three guiding rules/priciples for this class?
+1. Use problem solving skills and tinker.
+2. Always help others, to further their knowledge and to improve upon your own.
+3. No cellphones, as they don't help when trying to be successful.
+	What does that look like in practice?
+Using problem solving skills, and tinkering, is being able to create something using code and being able to overcome any obsticles by understanding the problem and tinkering around to find a solution. Helping others looks like asking a neighbor a question, and being able to identify their problem and how to solve it, without telling them exactly how to do it. You can do this as well as being able to properly explain how something works to help the person that needs it and also improving your own knowledge of what you are talking about. No cellphones looks like, well, there just are not any cellphones in the vicinty to distract you from the class. 
+	Imagine a student encountering a problem, a command is not working. Describe the problem solving process.
+1. Define the problem: analyze the data you are given, and what should you be focusing on?
+2. Generate solutions: brainstorm some ideas on how this problem could be solved, tinker around with the code.
+3. Decide the course of action: figure out which solution seems the best for your particular problem, make a plan.
+4. Implement the solution: enter the solution into the code, and see if anything is fixed or just changed.
+5. Evaluate the solution: does the solution work? If not, read any error messages and tinker around with the other solutions you brainstormed before.
+	What is the underlying motivation for this process?
+The underlying motivation for this process is the need to solve a problem, and to be able to solve it effectively and to the best opf your ability. If we had no problems to solve, we wouldn't need this process.
+	How does it relate to the research at Perkins et al.?
+The research at Perkins showed that knowing how to solve a problem correctly and effectively is extremely important to solving problems the best you can, as well as to stay focused on the process and to understand the problem thoroughly. 
