@@ -1,0 +1,10 @@
+Addison Correll's Journal 0917
+
+
+	What are the five different Java types, and what are they used for?
+short - a 16-bit integer value, used to save memory in large arrays 
+long - a 64-bit integer value, used to show a wider range of values
+double - a 64-bit floating-point value, used to show decimals, not the best for precise values
+int - a 32-bit integer value, used for unsigned integers
+float - a 32-bit floating-point value, used to save memory in large arrays, not the best for precise values
+
