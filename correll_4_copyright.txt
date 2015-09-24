@@ -23,7 +23,7 @@ Questions
 1. (Where) have you seen this license before?
 I have seen very little of this license before this class, but I now know that GNU is related to Linux in that it is an operating sysytem that works with Linux in a similar manner.
 2. What is it saying?
-The license is saying that the software is free as in freedom, allowing the software to be modified, shared, and studied, but is not exactly "free" when it comes to price. 
+The license is saying that the software is free as in freedom, allowing the software to be modified, shared, and studied, but is not exactly "free" when it comes to price. Also, you have to continue with the open source policy, so everything you create has to be open to the public. 
 3. What implications does this license have for the author? For the user?
 This license implicates that the author will allow the user to control the program, not the author controlling the program, which then controls the user. This means that the author may create something, but his or her creation should be available to the public to allow them to share in that creation and make it their own. The implications towards the user are that they are able to create anything they wish with the software, and in turn becoming an author of their own creations, putting them under the same concept that everything should be free to access and to modify. 
 4. When would you use this license?
