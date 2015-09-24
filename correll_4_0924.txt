@@ -1,0 +1,9 @@
+Addison Correll's Journal 0924
+
+	Describe - Why did Steve Ballmer call the GPL a virus?
+I believe Steve Ballmer called GPL a virus because he is the CEO of Microsoft, a company that is competing with Linux when it comes to operating systems. However, I believe that the more prominate reason is that he doesn't believe that code should be modified by the public, but by the author exclusively, believeing that the author should constrain the user so they don't do the "wrong thing". ***The GPL is a "cancer" because everything that is created with GPl MUST be open source as well, and some people don't want to do that with something they created.***
+	What is the relationship/difference open source and proprietary software?
+The major difference between open source and proprietary software is the freedom that they allow. Open source is free to use, meaning that you can use, change, and share the software without any contraints, with the only restriction being having to continue with the open source policy. However, proprietary software is software that is owned by a person or a company, and has many restrictions to their code, and they keep their work very secret and away from the user's gaze.  
+	What are the differences between the GPL and the MIT license?
+The differences between the GPL and the MIT license is that the GPL license is entirely free and allows the user to have complete control, but their new creation has to be open source as well, while the MIT license allows you to do the same thing WITHOUT having to continue with the open source policy.
+
