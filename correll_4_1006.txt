@@ -1,0 +1,10 @@
+Addison Correll's Journal 0906
+
+	What are methods?
+Methods are smaller programs that can be integrated with the larger program (often with parenthesis), and are used for short references when in a large program as to not have confusion, making the program much neater and simpler.
+	What are classes?
+Classes are the blueprints of code, as it describes a group of objects, but not a specific object itself. For example, Squirtle is a class of Pokemon, but each Squirtle has its own properties. 
+	What is an instance?
+Instances are the specific descriptions of a certain object, such as the variables of the object.
+	What are class methods?
+Class methods are methods that are called upon in a class, such as self.method_name. 
