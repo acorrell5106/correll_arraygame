@@ -7,4 +7,4 @@ Classes are the blueprints of code, as it describes a group of objects, but not 
 	What is an instance?
 Instances are the specific descriptions of a certain object, such as the variables of the object.
 	What are class methods?
-Class methods are methods that are called upon in a class, such as self.method_name. 
+Class methods are methods that are called upon in a class, such as self.method_name, that (I'm assuming) will have the method pass through all of the objects in the specific class. 
