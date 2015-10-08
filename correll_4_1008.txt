@@ -1,0 +1,12 @@
+Addison Correll's Journal 1008
+
+	What are your tentaitive thoughts / plans for your art project?
+I'm still brainstorming over ideas for this art project, but I am thinking of having a setup where an integer is checked to be a cetain number (my favorite numbers) and they will become an interesting and nice shape, and then have my least favorite numbers turn into ugly and boring shapes. With all of the other numbers, I will have a certain shape type represent evens and another shape type be odds.
+	What might be methods you will use?
+I'm going to use a method for my favorite numbers and one for my least favorite numbers, as well as having two more for finding even and odd numbers. I might make the first section more interesting by having numbers that have factors that are my favorite and least favorite numbers included be a mixed shape, with one section representing my favorite number and the other representing my least favorite number.
+	How might you incorporate a for loop?
+I'm intending to have a for loop that will count up to 100, and have the integer in the for loop be passed to the methods to be turned into a shape, whether it's a pretty shape or an ugly one, or in between.
+	How might you incorporate, if, else if, else?
+I'm going to have the if, else, if, and else be put after the for loop to continue the check of numbers by the methods to see what shape the number is going to become on the canvas.
+	What math might you use?
+I'm intending to have methods that will check for divisiblity of the integer, and then have the number be represented as its asigned shape, as well as having the methods check for multiple factors of a single number to give it a different shape. 
