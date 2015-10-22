@@ -1,0 +1,6 @@
+Addison Correll's Journal 1022
+
+	What is the purpose of the code art that you create?
+I believe the purpose of our code art was to learn more about methods and classes and how we can use them to create anything we want to, whether it's through text/numbers or,in this case, art. I definently learned a lot through this process, and I feel like I could do something like this again with the knowledge I have obtained.
+	What is the purpose of creating art with code to learn?
+I believe that we created the art with code to learn because one of the only ways to learn is to put what knowledge you already have to use to be able to learn even more through the process. So, in this case, we already knew about methods and a little about classes, so we were able to use them in the code art, while also being able to learn more about JavaFX and how we can create art with coordinates and geometry.
