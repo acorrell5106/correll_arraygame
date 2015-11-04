@@ -1,0 +1,10 @@
+Addison Correll's Journal 1104
+
+	What is a method?
+A method is a program that lives inside of a larger program, and performs its own actions and procedures that end up helping the larger program in its task.
+	Which methods did you use and how did you use them in your guessing game?
+I used the method pickNumber to take the user's guess and determine if it was correct, too high, or too low, and then pass that information to the main program to run and work.
+	What is a while loop?
+A while loop is a part of code that will run the program under certain circumstances, but if this changes while the program is running, then the while loop will stop the program.
+	How did you use a while loop, boolean, and counter in your guessing game?
+I used a while loop in the game whenever the player would guess a number, and the number was incorrect. This would set the win setting to false, continuing the while loop. So, whenever you picked the correct number was chosen, the win setting would be set true, casuing the while loop to end the game. Along with the while loop, the booleans I used were to determine the win and lose settings, or whether you guessed correctly or not. I used a counter in the game by counting down the number of guesses the user has before they officially lose the game.  
