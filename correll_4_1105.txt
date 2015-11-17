@@ -1,0 +1,10 @@
+Addison Correll's Journal 1105
+
+	What are strings?
+Strings are lines of code, words and letters exclusively.
+	What are they good for?
+Strings are good for writing out sentences that do not involve numbers, perhaps if you are printing out a name or a saying.
+	What are some string methods?
+Some string methods would be Compare, Equals, ToLower, and ToUpper, and these will identify, compare, or change a string that is specified by the method.
+	How do we identify string methods?
+To identify a string method, you would find a dot next to it. 
