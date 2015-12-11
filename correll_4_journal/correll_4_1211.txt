@@ -1,0 +1,4 @@
+Addison Correll's Journal 1211
+
+	Describe the 2-D dungeon or world you would like to have for your game.
+For my 2-D game, I want to have the world be an alien nest, almost constructed like an ant pile. I want the player to have to fight through the aliens to find one of their colleague that was taken. The world is going to be constructed with a stone tile, with some dirt and mud seeping through, like an old basement, that the aliens have carved out for their home. The world is going to be a lot of small tunnels that are set up like a maze, and there will be occassional large openings that will have a larger amoun of enemies or maybe a boss fight.
