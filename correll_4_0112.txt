@@ -1,0 +1,4 @@
+What slick game will you create?
+	My game will be a maze game, where you have to find all of the different colored orbs before time runs out.
+What challenges have you faced / are you facing with your slick game?
+	The one challenge I feel I will face is not knowing exactly what to do for a certain situation. We have gone over certain scenarios in class, but I think there will be at least one case where I'm not sure what to do. I could try and figure it out on my own, but I might not have enough time to finish my project.
