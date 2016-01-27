@@ -1,0 +1,4 @@
+	How do you add an image to a slick game?
+To add an image to a slick game, you have to include the line (Image ___ = new Image("file location");), including the name of the image and the file path to the said picture. You put this code in a specific class that will use the image somewhere in the game.
+	Where is the image drawn?
+The image is drawn in the (public void render) class, where the class is called and the image is drawn if the class meets certain requirements. For example: (o.currentImage.draw(o.x, o.y);).
