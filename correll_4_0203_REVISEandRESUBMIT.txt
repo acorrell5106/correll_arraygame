@@ -1,0 +1,2 @@
+	Why bother with revising and resubmitting?
+By revising the code we have, we will gain a better understanding of what our code does and if it is actually useful to our game or not. Also, we'll learn how to properly clean up a project, so we can make more polished projects down the line.
