@@ -1,0 +1,22 @@
+	What are arrays used for?
+Arrays are used for creating a list of things inside a Java program.
+	What is the code for an int array?
+The code for an int array would be int[] = new int[3]. 
+	What is the code for a String array?
+The code for a String array would be String[] = new String[3].
+	What is the code for a boolean array?
+The code for a boolean array would be array[] = new array[3].
+	What is the code for a double array?
+The code for a double array would be double[] = new double[3].
+	How would you change the first value of the int array to 42?
+The code would be int[] numbers = new int[3], and then numbers[0] = 42.
+	Of the String array to "Bob"?
+The code would be String[] words = new String[3], and then words[0] = "Bob".
+	What does this do: private String[] dessert = new String[3];
+This creates a String array called desert that has three elements.
+	What does this do: private String[] postres = {"rice pudding", "pan dulce", "bunuelos"}
+This creates a String array called postres that has the foods listed as its elements.
+	How are they different?
+They are different because the first does not fill in the elements, while the second one does.
+	How would we replace "bunuelos" with "apple pie"?
+The code would be postres[2] = "apple pie".
