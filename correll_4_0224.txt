@@ -7,10 +7,10 @@ Instantiate: rat = new Rat();
 The declaration is made in the main game class, right underneath public class GameName extends BasicGameState {}.
 The instantiation in made in the main game class, in the oublic void init.
 	Provide a two-dimensional array that specifies coordinates for five rats:
-int[][] coordinates = new int[4][4];
-coordinates[0][0] = rat1;
-coordinates[0][3] = rat2;
-coordinates[3][2] = rat3;
-coordinates[1][1] = rat4;
-coordinates[2][1] = rat5;
+String[][] coordinates = new String[4][4];
+coordinates[0][0] = "rat1";
+coordinates[0][3] = "rat2";
+coordinates[3][2] = "rat3";
+coordinates[1][1] = "rat4";
+coordinates[2][1] = "rat5";
  
