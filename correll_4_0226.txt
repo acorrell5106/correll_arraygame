@@ -1,0 +1,11 @@
+	What does the code below do?
+The code below creates a 2D char array with 9 rows and 9 columns called map. It then assigns 'x' to several different places in the 2D array. The first for loop starts counting the
+length of map's row with int i, and the second starts counting the length of map's columns with int j. Then, if j is less than the length of the column, than it will either print out 
+a period or an x, depending if it finds an x or not in the array. However, if j is not less than the column, then it will move down a line, starting the next i for its for loop, 
+and will then place either a period or an x where i and j are at, depending if they find an x or not in the array. 
+	How could you make it print an 'X'? What array values would you change?
+If I wanted to print an 'X', I would have to change the locations of the characters on the array. So, instead of having an 'x' be located on map[2][3], 
+I would have the change the values in the square brackets to something that would resemble an 'X' using all of the characters and their locations.
+	How could you use this to make a 5 in a row game?
+To make a 5 in a row game, you could have it so you could choose where the character's coordinates would be in game, and then have a for loop that would check and see 
+if there are a certain number of characters in a row.
