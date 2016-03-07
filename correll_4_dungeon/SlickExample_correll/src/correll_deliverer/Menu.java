@@ -59,7 +59,6 @@ public class Menu extends BasicGameState {
             case Input.KEY_1:
 
                 game.enterState(1, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
-                Level2.counter = 40000;
                 
                 break;
 

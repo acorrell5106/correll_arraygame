@@ -148,9 +148,6 @@ public class Enemy {
 
     }*/
 
-
-   
-
     boolean isBlocked(float xcheck, float ycheck) {
         // System.out.println("The skeleton " + this.getID() + " Checking on the tile at x " + xcheck + " and at y " + ycheck);
         int xBlock = (int) (xcheck / SIZE);

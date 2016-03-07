@@ -58,7 +58,6 @@ public class Lose extends BasicGameState {
             
             case Input.KEY_1:
 
-                Level2.counter = 40000;
                 Level1.player.x = 96f;
                 Level1.player.y = 228f;
                 Orb.isvisible = true;

@@ -16,28 +16,35 @@ import org.newdawn.slick.tiled.TiledMap;
 
 public class Level2 extends BasicGameState {
 
-    public GoodPortal gportal;
+    public GoodPortal2 gportal2;
     public Orb blue;
     public OrbRed red;
     public OrbYellow yellow;
     public static Marble damage;
+    public Trap trap;
+    public Trap trap2;
+    public Trap trap3;
 
-    public static boolean blueb;
-    public static boolean redb;
-    public static boolean yellowb;
-    public static boolean orbb;
-    public static boolean win;
+    public int orbs = 0;
+    public static boolean drawo = false;
+    public static boolean blueb = false;
+    public static boolean redb = false;
+    public static boolean yellowb = false;
+    public static boolean orbb = false;
+    public static boolean win = false;
 
-    public ArrayList<GoodPortal> gp = new ArrayList();
+    public ArrayList<GoodPortal2> gp = new ArrayList();
     public ArrayList<Orb> orbz = new ArrayList();
     public ArrayList<OrbRed> orbzz = new ArrayList();
     public ArrayList<OrbYellow> orbzzz = new ArrayList();
     public ArrayList<Item> stuff = new ArrayList();
+    public ArrayList<Trap> tr = new ArrayList();
+    public ArrayList<Trap> tr2 = new ArrayList();
+    public ArrayList<Trap> tr3 = new ArrayList();
     
     private static TiledMap grassMap;
     private static AppGameContainer app;
     private static Camera camera;
-    public static int counter = 40000;
     private static final int SIZE = 32;
     private static final int SCREEN_WIDTH = 800;
     private static final int SCREEN_HEIGHT = 750;
@@ -101,16 +108,22 @@ public class Level2 extends BasicGameState {
         player = new Player();
         player.gameState = 2;
         
-        gportal = new GoodPortal(55, 670);
+        gportal2 = new GoodPortal2(55, 100);
         blue = new Orb(705, 190);
         red = new OrbRed(60, 700);
         yellow = new OrbYellow(180, 480);
         damage = new Marble((int) player.x, (int) player.y);
+        trap = new Trap(575, 210);
+        trap2 = new Trap(720, 335);
+        trap3 = new Trap(80, 430);
 
-        gp.add(gportal);
+        gp.add(gportal2);
         orbz.add(blue);
         orbzz.add(red);
         orbzzz.add(yellow);
+        tr.add(trap);
+        tr2.add(trap2);
+        tr3.add(trap3);
 
     }
 
@@ -123,7 +136,7 @@ public class Level2 extends BasicGameState {
         player.sprite.draw((int) player.x, (int) player.y);
                 //coordinates
 		g.drawString("x: " + (int)player.x + "y: " +(int)player.y , player.x, player.y - 10);
-        g.drawString("Time Passed: " + counter / 1000, camera.cameraX + 10, camera.cameraY);
+                g.drawString("Orb Count: " + orbs, camera.cameraX + 275, camera.cameraY + 3);
 
         if (damage.isVisible) {
             
@@ -132,11 +145,11 @@ public class Level2 extends BasicGameState {
             
         }
         
-        for (GoodPortal p : gp) {
+        for (GoodPortal2 p : gp) {
                 if (p.isvisible) {
                 
                     p.currentImage.draw(p.x, p.y);
-                    //g.draw(s.hitbox);
+                    //g.draw(p.hitbox);
 
             }
         }
@@ -168,26 +181,41 @@ public class Level2 extends BasicGameState {
             }
         }
         
-        /*for (Altar a : altarz) {
-            if (a.isvisible) {
+        for (Trap t : tr) {
+                if (t.isvisible) {
                 
-                a.currentImage.draw(a.x, a.y);
-                //g.draw(a.hitbox);
+                    t.currentImage.draw(t.x, t.y);
+                    //g.draw(t.hitbox);
 
+            }
         }
-    }*/
-        
-        if (orbb) {
             
-            g.drawString("To escape: Press Q to\n summon the final orb and\n activate the altar blocking the\n entrance, before time runs out: " + counter / 1000, camera.cameraX + 10, camera.cameraY + 15);
+            for (Trap t : tr2) {
+                if (t.isvisible) {
+                
+                    t.currentImage.draw(t.x, t.y);
+                    //g.draw(t.hitbox);
+
+            }
+        }
             
+            for (Trap t : tr3) {
+                if (t.isvisible) {
+                
+                    t.currentImage.draw(t.x, t.y);
+                    //g.draw(t.hitbox);
+
+            }
+        }
+            if (drawo) {
+                g.drawString("When you have \nall three Orbs, \npress Q to summon\nthe Final Orb!", camera.cameraX + 1, camera.cameraY + 3);
+                
         }
     }
 
     public void update(GameContainer gc, StateBasedGame sbg, int delta)
             throws SlickException {
 
-        counter -= delta;
         Input input = gc.getInput();
         float fdelta = delta * player.speed;
         player.setpdelta(fdelta);
@@ -250,7 +278,7 @@ public class Level2 extends BasicGameState {
 
             }
             
-        } else if (input.isKeyDown(Input.KEY_Q) && (blueb && redb && yellowb)) {     
+        } else if (input.isKeyDown(Input.KEY_Q) && (orbb)) {     
             
             damage.setX((int) player.x);
             damage.setY((int) player.y);
@@ -273,15 +301,18 @@ public class Level2 extends BasicGameState {
         Level2.player.rect.setLocation(Level2.player.getPlayershitboxX(),
                 Level2.player.getPlayershitboxY() + 50);
 
-        for (GoodPortal p : gp) {
+        for (GoodPortal2 p : gp) {
             if (Level2.player.rect.intersects(p.hitbox)) {
-                if (p.isvisible) {
-                    
+                
+                    drawo = false;
+                    Level1.draw = false;
+                    Level1.player.x = 40;
+                    Level1.player.y = 590;
+                    player.gameState = 1;
                     sbg.enterState(1, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
                     
                 }
             }
-        }
         
         
         for (Orb o : orbz) {
@@ -289,6 +320,7 @@ public class Level2 extends BasicGameState {
                 if (o.isvisible) {
                     
                     blueb = true;
+                    orbs++;
                     o.isvisible = false;
                     
                 }
@@ -300,6 +332,7 @@ public class Level2 extends BasicGameState {
                 if (o.isvisible) {
                     
                     redb = true;
+                    orbs++;
                     o.isvisible = false;
                     
                 }
@@ -311,20 +344,45 @@ public class Level2 extends BasicGameState {
                 if (o.isvisible) {
                     
                     yellowb = true;
+                    orbs++;
                     o.isvisible = false;
                     
                 }
             }
         }
         
-        /*for (Altar a : altarz) {
-            if (damage.hitbox.intersects(a.hitbox)) {
-                
-                    win = true;
-                    a.isvisible = false;
+        for (Trap t : tr) {
+            if (Level2.player.rect.intersects(t.hitbox)) {
+                if (t.isvisible) {
+                     
+                    Level2.player.x = 45;
+                    Level2.player.y = 200;
                     
+                }
             }
-        }*/
+        }
+        
+        for (Trap t : tr2) {
+            if (Level2.player.rect.intersects(t.hitbox)) {
+                if (t.isvisible) {
+                     
+                    Level2.player.x = 45;
+                    Level2.player.y = 200;
+                    
+                }
+            }
+        }
+        
+        for (Trap t : tr3) {
+            if (Level2.player.rect.intersects(t.hitbox)) {
+                if (t.isvisible) {
+                     
+                    Level2.player.x = 45;
+                    Level2.player.y = 200;
+                    
+                }
+            }
+        }
         
         if (damage.isIsVisible()) {
             if (player.getDirection() == 0) {
@@ -358,12 +416,12 @@ public class Level2 extends BasicGameState {
             
             }
     
-        if (counter <= 0) {
+        /*if (counter <= 0) {
             
             makevisible();
             sbg.enterState(4, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
             
-        }
+        }*/
 
         if (win && orbb) {
             

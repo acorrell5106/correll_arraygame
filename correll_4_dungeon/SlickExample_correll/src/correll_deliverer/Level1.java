@@ -1,11 +1,11 @@
 package correll_deliverer;
 
 import static correll_deliverer.Level2.blueb;
-import static correll_deliverer.Level2.counter;
 import static correll_deliverer.Level2.damage;
 import static correll_deliverer.Level2.player;
 import static correll_deliverer.Level2.redb;
 import static correll_deliverer.Level2.yellowb;
+import org.newdawn.slick.*;
 import java.util.ArrayList;
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.Color;
@@ -19,18 +19,27 @@ import org.newdawn.slick.state.transition.FadeInTransition;
 import org.newdawn.slick.state.transition.FadeOutTransition;
 import org.newdawn.slick.tiled.TiledMap;
 
-public class Level1 extends BasicGameState{
+public class Level1 extends BasicGameState {
     
     public GoodPortal gportal;
     public Special special;
+    public Trap trap;
+    public Trap trap2;
+    public Trap trap3;
     
+    public static Music music;
+    public int orbs = 0;
     public boolean reveal = false;
     public boolean pass = false;
+    public static boolean draw = false;
     
     public ArrayList<GoodPortal> gp = new ArrayList();
     public ArrayList<Item> stuff = new ArrayList();
     public ArrayList<Special> item = new ArrayList();
-
+    public ArrayList<Trap> tr = new ArrayList();
+    public ArrayList<Trap> tr2 = new ArrayList();
+    public ArrayList<Trap> tr3 = new ArrayList();
+    
     private static TiledMap grassMap2;
     private static AppGameContainer app;
     private static Camera camera;
@@ -47,6 +56,8 @@ public class Level1 extends BasicGameState{
     public void init(GameContainer gc, StateBasedGame sbg)
             throws SlickException {
 
+        //music = new Music("res/");
+        //music.loop(1.0f, 5.0f);
         gc.setTargetFrameRate(60);
         gc.setShowFPS(false);
         grassMap2 = new TiledMap("res/level1.tmx");
@@ -94,9 +105,15 @@ public class Level1 extends BasicGameState{
         
         gportal = new GoodPortal(55, 670);
         special = new Special(180, 705);
+        trap = new Trap(200, 110);
+        trap2 = new Trap(725, 450);
+        trap3 = new Trap(210, 590);
         
         gp.add(gportal);
         item.add(special);
+        tr.add(trap);
+        tr2.add(trap2);
+        tr3.add(trap3);
 
     }
 
@@ -108,7 +125,8 @@ public class Level1 extends BasicGameState{
         camera.translateGraphics();
         player.sprite.draw((int) player.x, (int) player.y);
                 //coordinates
-		g.drawString("x: " + (int)player.x + "y: " +(int)player.y , player.x, player.y - 10);
+		g.drawString("x: " + (int)player.x + "," + " y: " +(int)player.y , player.x, player.y - 10);
+                g.drawString("Orb Count: " + orbs, camera.cameraX + 275, camera.cameraY + 3);
                 
             for (GoodPortal p : gp) {
                 if (p.isvisible) {
@@ -127,12 +145,38 @@ public class Level1 extends BasicGameState{
 
             }
         }
+            for (Trap t : tr) {
+                if (t.isvisible) {
+                
+                    t.currentImage.draw(t.x, t.y);
+                    //g.draw(t.hitbox);
 
-            if (reveal) {
-                g.drawString("Press R to turn on the Portal!" + 50, camera.cameraX + 10, camera.cameraY + 15);
+            }
         }
             
+            for (Trap t : tr2) {
+                if (t.isvisible) {
+                
+                    t.currentImage.draw(t.x, t.y);
+                    //g.draw(t.hitbox);
+
+            }
         }
+            
+            for (Trap t : tr3) {
+                if (t.isvisible) {
+                
+                    t.currentImage.draw(t.x, t.y);
+                    //g.draw(t.hitbox);
+
+            }
+        }
+
+            if (draw) {
+                g.drawString("Press R to turn \non the Portal!", camera.cameraX + 1, camera.cameraY + 3);
+                
+        }   
+    }
 
     public void update(GameContainer gc, StateBasedGame sbg, int delta)
             throws SlickException {
@@ -190,7 +234,7 @@ public class Level1 extends BasicGameState{
         
         } else if (input.isKeyDown(Input.KEY_I)) {     
             
-            sbg.enterState(5, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
+                sbg.enterState(5, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
             
         } else if (input.isKeyDown(Input.KEY_R) && (reveal)) {     
             
@@ -205,6 +249,7 @@ public class Level1 extends BasicGameState{
             if (Level1.player.rect.intersects(s.hitbox)) {
                 if (s.isvisible) {
                     
+                    draw = true;
                     reveal = true;
                     s.isvisible = false;
                     
@@ -217,12 +262,49 @@ public class Level1 extends BasicGameState{
                 if (p.isvisible) {
                     if(pass) {
                     
+                    Level2.drawo = true;
+                    Level2.player.x = 45;
+                    Level2.player.y = 200;
+                    player.gameState = 2;
                     sbg.enterState(2, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
                     
                 }
             }
         }
     }
+        
+        for (Trap t : tr) {
+            if (Level1.player.rect.intersects(t.hitbox)) {
+                if (t.isvisible) {
+                     
+                    Level1.player.x = 550;
+                    Level1.player.y = 77;
+                    
+                }
+            }
+        }
+        
+        for (Trap t : tr2) {
+            if (Level1.player.rect.intersects(t.hitbox)) {
+                if (t.isvisible) {
+                     
+                    Level1.player.x = 550;
+                    Level1.player.y = 77;
+                    
+                }
+            }
+        }
+        
+        for (Trap t : tr3) {
+            if (Level1.player.rect.intersects(t.hitbox)) {
+                if (t.isvisible) {
+                     
+                    Level1.player.x = 550;
+                    Level1.player.y = 77;
+                    
+                }
+            }
+        }
     }
 
     public int getID() {
