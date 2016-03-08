@@ -65,19 +65,24 @@ public class Win extends BasicGameState {
 
             case Input.KEY_1:
 
-                Level2.player.x = 96f;
-                Level2.player.y = 228f;
+                Level1.player.x = 550;
+                Level1.player.y = 77;
+                Level2.player.x = 45;
+                Level2.player.y = 200;
+                Special.isvisible = true;
+                Level1.reveal = false;
+                Level1.pass = false;
                 Orb.isvisible = true;
                 OrbRed.isvisible = true;
                 OrbYellow.isvisible = true;
-                Level2.damage.isVisible = false;
+                Marble.isVisible = false;
                 Level2.blueb = false;
                 Level2.redb = false;
                 Level2.yellowb = false;
                 Level2.orbb = false;
-                Level2.win = false;
+                Level2.orbs = 0;
                 
-                game.enterState(1, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
+                game.enterState(0, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
 
                 break;
                 

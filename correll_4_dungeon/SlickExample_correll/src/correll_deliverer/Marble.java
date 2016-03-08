@@ -9,7 +9,7 @@ public class Marble {
     
         private int x;
 	private int y;
-        public boolean isVisible = false;
+        public static boolean isVisible = false;
         Image currentImage; 
         Shape hitbox;
         //private int time;

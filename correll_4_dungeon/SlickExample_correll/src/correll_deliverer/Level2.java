@@ -25,13 +25,12 @@ public class Level2 extends BasicGameState {
     public Trap trap2;
     public Trap trap3;
 
-    public int orbs = 0;
+    public static int orbs = 0;
     public static boolean drawo = false;
     public static boolean blueb = false;
     public static boolean redb = false;
     public static boolean yellowb = false;
     public static boolean orbb = false;
-    public static boolean win = false;
 
     public ArrayList<GoodPortal2> gp = new ArrayList();
     public ArrayList<Orb> orbz = new ArrayList();
@@ -135,7 +134,7 @@ public class Level2 extends BasicGameState {
         camera.translateGraphics();
         player.sprite.draw((int) player.x, (int) player.y);
                 //coordinates
-		g.drawString("x: " + (int)player.x + "y: " +(int)player.y , player.x, player.y - 10);
+		//g.drawString("x: " + (int)player.x + "y: " +(int)player.y , player.x, player.y - 10);
                 g.drawString("Orb Count: " + orbs, camera.cameraX + 275, camera.cameraY + 3);
 
         if (damage.isVisible) {
@@ -181,32 +180,28 @@ public class Level2 extends BasicGameState {
             }
         }
         
-        for (Trap t : tr) {
-                if (t.isvisible) {
+            for (Trap t : tr) {
                 
                     t.currentImage.draw(t.x, t.y);
                     //g.draw(t.hitbox);
 
             }
-        }
+        
             
             for (Trap t : tr2) {
-                if (t.isvisible) {
                 
                     t.currentImage.draw(t.x, t.y);
                     //g.draw(t.hitbox);
 
             }
-        }
             
             for (Trap t : tr3) {
-                if (t.isvisible) {
                 
                     t.currentImage.draw(t.x, t.y);
                     //g.draw(t.hitbox);
 
             }
-        }
+            
             if (drawo) {
                 g.drawString("When you have \nall three Orbs, \npress Q to summon\nthe Final Orb!", camera.cameraX + 1, camera.cameraY + 3);
                 
@@ -272,8 +267,6 @@ public class Level2 extends BasicGameState {
                     && (!(isBlocked(player.x + SIZE + fdelta,
                             player.y) || isBlocked(player.x + SIZE + fdelta, player.y
                             + SIZE - 1)))) {
-                
-			//player.sprite.update(delta);
                 player.x += fdelta;
 
             }
@@ -353,34 +346,28 @@ public class Level2 extends BasicGameState {
         
         for (Trap t : tr) {
             if (Level2.player.rect.intersects(t.hitbox)) {
-                if (t.isvisible) {
                      
                     Level2.player.x = 45;
                     Level2.player.y = 200;
-                    
-                }
+                
             }
         }
         
         for (Trap t : tr2) {
             if (Level2.player.rect.intersects(t.hitbox)) {
-                if (t.isvisible) {
                      
                     Level2.player.x = 45;
                     Level2.player.y = 200;
                     
-                }
             }
         }
         
         for (Trap t : tr3) {
             if (Level2.player.rect.intersects(t.hitbox)) {
-                if (t.isvisible) {
                      
                     Level2.player.x = 45;
                     Level2.player.y = 200;
                     
-                }
             }
         }
         
@@ -415,20 +402,6 @@ public class Level2 extends BasicGameState {
                 damage.setIsVisible(false);
             
             }
-    
-        /*if (counter <= 0) {
-            
-            makevisible();
-            sbg.enterState(4, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
-            
-        }*/
-
-        if (win && orbb) {
-            
-            sbg.enterState(3, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
-            
-        }
-    
     }
 
     public int getID() {

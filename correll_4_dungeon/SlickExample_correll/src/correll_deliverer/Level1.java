@@ -2,6 +2,7 @@ package correll_deliverer;
 
 import static correll_deliverer.Level2.blueb;
 import static correll_deliverer.Level2.damage;
+import static correll_deliverer.Level2.orbb;
 import static correll_deliverer.Level2.player;
 import static correll_deliverer.Level2.redb;
 import static correll_deliverer.Level2.yellowb;
@@ -26,11 +27,12 @@ public class Level1 extends BasicGameState {
     public Trap trap;
     public Trap trap2;
     public Trap trap3;
+    public Crystal crystal;
+    public static Marble damage;
     
     public static Music music;
-    public int orbs = 0;
-    public boolean reveal = false;
-    public boolean pass = false;
+    public static boolean reveal = false;
+    public static boolean pass = false;
     public static boolean draw = false;
     
     public ArrayList<GoodPortal> gp = new ArrayList();
@@ -39,6 +41,7 @@ public class Level1 extends BasicGameState {
     public ArrayList<Trap> tr = new ArrayList();
     public ArrayList<Trap> tr2 = new ArrayList();
     public ArrayList<Trap> tr3 = new ArrayList();
+    public ArrayList<Crystal> cry = new ArrayList();
     
     private static TiledMap grassMap2;
     private static AppGameContainer app;
@@ -58,6 +61,7 @@ public class Level1 extends BasicGameState {
 
         //music = new Music("res/");
         //music.loop(1.0f, 5.0f);
+        //music.play;
         gc.setTargetFrameRate(60);
         gc.setShowFPS(false);
         grassMap2 = new TiledMap("res/level1.tmx");
@@ -108,12 +112,15 @@ public class Level1 extends BasicGameState {
         trap = new Trap(200, 110);
         trap2 = new Trap(725, 450);
         trap3 = new Trap(210, 590);
+        crystal = new Crystal(700, 40);
+        damage = new Marble((int) player.x, (int) player.y);
         
         gp.add(gportal);
         item.add(special);
         tr.add(trap);
         tr2.add(trap2);
         tr3.add(trap3);
+        cry.add(crystal);
 
     }
 
@@ -125,8 +132,15 @@ public class Level1 extends BasicGameState {
         camera.translateGraphics();
         player.sprite.draw((int) player.x, (int) player.y);
                 //coordinates
-		g.drawString("x: " + (int)player.x + "," + " y: " +(int)player.y , player.x, player.y - 10);
-                g.drawString("Orb Count: " + orbs, camera.cameraX + 275, camera.cameraY + 3);
+		//g.drawString("x: " + (int)player.x + "," + " y: " +(int)player.y , player.x, player.y - 10);
+                g.drawString("Orb Count: " + Level2.orbs, camera.cameraX + 275, camera.cameraY + 3);
+           
+            if (damage.isVisible) {
+            
+            damage.currentImage.draw(damage.getX(), damage.getY());
+                g.draw(damage.hitbox);
+            
+        }    
                 
             for (GoodPortal p : gp) {
                 if (p.isvisible) {
@@ -146,29 +160,32 @@ public class Level1 extends BasicGameState {
             }
         }
             for (Trap t : tr) {
-                if (t.isvisible) {
                 
                     t.currentImage.draw(t.x, t.y);
                     //g.draw(t.hitbox);
-
-            }
+     
         }
             
             for (Trap t : tr2) {
-                if (t.isvisible) {
                 
                     t.currentImage.draw(t.x, t.y);
                     //g.draw(t.hitbox);
-
-            }
+            
         }
             
             for (Trap t : tr3) {
-                if (t.isvisible) {
                 
                     t.currentImage.draw(t.x, t.y);
                     //g.draw(t.hitbox);
-
+            
+        }
+            
+            for (Crystal c : cry) {
+                if (c.isvisible) {
+                    
+                    c.currentImage.draw(c.x, c.y);
+                    //g.draw(c.hitbox);
+                    
             }
         }
 
@@ -227,7 +244,6 @@ public class Level1 extends BasicGameState {
                     && (!(isBlocked2(player.x + SIZE + fdelta,
                             player.y) || isBlocked2(player.x + SIZE + fdelta, player.y
                             + SIZE - 1)))) {
-			//player.sprite.update(delta);
                 player.x += fdelta;
 
             }
@@ -239,6 +255,14 @@ public class Level1 extends BasicGameState {
         } else if (input.isKeyDown(Input.KEY_R) && (reveal)) {     
             
             pass = true;
+            
+        } else if (input.isKeyDown(Input.KEY_Q) && (orbb)) {     
+            
+            damage.setX((int) player.x);
+            damage.setY((int) player.y);
+            damage.hitbox.setX(damage.getX());
+            damage.hitbox.setY(damage.getY());
+            damage.setIsVisible(!damage.isIsVisible());
             
         }
 
@@ -275,36 +299,75 @@ public class Level1 extends BasicGameState {
         
         for (Trap t : tr) {
             if (Level1.player.rect.intersects(t.hitbox)) {
-                if (t.isvisible) {
                      
                     Level1.player.x = 550;
                     Level1.player.y = 77;
-                    
-                }
+                                 
             }
         }
         
         for (Trap t : tr2) {
             if (Level1.player.rect.intersects(t.hitbox)) {
-                if (t.isvisible) {
                      
                     Level1.player.x = 550;
                     Level1.player.y = 77;
                     
-                }
             }
         }
         
         for (Trap t : tr3) {
             if (Level1.player.rect.intersects(t.hitbox)) {
-                if (t.isvisible) {
                      
                     Level1.player.x = 550;
                     Level1.player.y = 77;
-                    
-                }
+                
             }
         }
+        
+        for (Crystal c : cry) {
+            if (damage.hitbox.intersects(c.hitbox)) {
+                if (c.isvisible) {
+                    
+                    c.isvisible = false;
+                    damage.setX(100);
+                    damage.setY(100);
+                    sbg.enterState(3, new FadeOutTransition(Color.white), new FadeInTransition(Color.white));
+                    
+                }                      
+            }
+        }
+        
+        if (damage.isIsVisible()) {
+            if (player.getDirection() == 0) {
+
+                    damage.setX((int) player.x);
+                    damage.setY(damage.getY() - 5);
+                    
+                } else if (player.getDirection() == 2) {
+                    
+                    damage.setX((int) player.x);
+                    damage.setY(damage.getY() + 5);
+                    
+                } else if (player.getDirection() == 3) {
+                    
+                    damage.setX(damage.getX() - 5);
+                    damage.setY(damage.getY());
+                    
+                } else if (player.getDirection() == 1) {
+                    
+                    damage.setX(damage.getX() + 5);
+                    damage.setY(damage.getY());
+                    
+                }
+                
+                damage.hitbox.setX(damage.getX());
+                damage.hitbox.setY(damage.getY());
+                
+            } else {
+                
+                damage.setIsVisible(false);
+            
+            }
     }
 
     public int getID() {

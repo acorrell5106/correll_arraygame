@@ -8,7 +8,6 @@ import org.newdawn.slick.geom.Shape;
 public class Trap {
         public int x;
 	public int y;
-	public static boolean isvisible = true;
 	Image currentImage;
 	Shape hitbox;
 	Image trapImage = new Image("res/trap.png");
