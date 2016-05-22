@@ -1,0 +1,9 @@
+Addison Correll's Journal 1110
+
+	In your game, how can you track what challenges the player has solved?
+In the game, you can use booleans to track what a player has accomplished. For example, if you have attained a can of dog food, you can have a boolean for the dog food that says true that will be taken into account when playing the game.
+	How can you track HP?
+Maybe you could use a system where the player has a set health, but it decreases when attacked or hurt through the player's choices. For example, if the boolean "Fight" is set to true, then it will take the HP down 10 points, and you lose when the HP equals 0.
+	How can you track items?
+Like the choices, you can track items with booleans that say if the player did or did not attain a certain item.
+

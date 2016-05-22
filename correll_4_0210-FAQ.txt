@@ -1,0 +1,11 @@
+	Make a list of ten problems you have faced when adding orbs to your game:
+1. Setting the orb up so it would match the player's coordinates
+2. Getting used to the new getters and setters
+3. Getting the timeExists to  work (I ended up removing this feature, as my game already has a tight time frame)
+4. Having the orb face the direction the player was facing
+5. Having the orb do damage to somethng that wasn't an enemy (Which I'm still working on)
+6. Having the orb have a certain speed
+7. Making the orb change images
+8. Making the orb do awesome things (Getting bigger/smaller, etc)
+9. Having a boolean work with the orb to determine if the orb was there
+10. Having the orb dissapear when the player won/lost

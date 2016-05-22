@@ -1,0 +1,5 @@
+Addison Correll's Prime Algorithm
+
+Prime numbers are numbers that are only divisible by one, so we want to single out all of the numbers that can be divided by any other number. How can I do this?
+We can divide i by all numbers that are considered divisors, but is there another, easier way?
+

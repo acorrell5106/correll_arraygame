@@ -1,0 +1,8 @@
+Addison Correll's Journal 0928
+
+	How can you count in Java?
+You can count in Java using for loops to make an integer increase by a certain number, check if it's less than a certain number and equal to a certain number, then make the code run again until it get's to a certain number to stop the loop.
+	How can you check to see if a number is divisible?
+You can check and see if a number is divisible by typing (i %) and then whatever the number is you want to divide by, and then type (== 0) or (!= 0) to see if there is anything left over when dividing the number. 
+	How can you track if a number has a divisor?
+When you print out the steps above, if the integer equals 0 after being divided, then you know if the number has a divisor.

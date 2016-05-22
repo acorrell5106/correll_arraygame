@@ -1,0 +1,29 @@
+	How do we make a class? What code comes at the beginning?
+public class Review {
+
+}
+	|Donut Bismarck = new Donut();| Is this a class constructor?
+This is not a class constructor because it creates an object, but it calls on the class constructor from class "Donut" with Donut(). 
+	How do we make a class with values and a class constructor?
+public class Cake {
+	String icing;
+	boolean isEaten;	
+	int layers;
+
+	public Cake(String a, int b) {
+		this.icing = a;
+		this.layers = b;
+	}
+}
+	What is a getter? What does it do?
+A getter will get and return a value from an object.
+        public boolean getisEaten() {
+                return this.isEaten;
+        }
+	What is a setter? What does it do?
+A setter will set variable values for an instance.
+	public void setisEaten(boolean b) {
+		
+	}
+	What is an array of Breakfast? How would you create one?
+Breakfast[] familyBreakfasts; 

@@ -1,0 +1,2 @@
+	Describe what you will have to do clean up your code to make the program more your own (and legible):
+To make the code cleaner and more my own, I will have to delete the comments left by the actual coder, and possibly change them to match my own understanding of the code. I might also delete some code that is superfluos to what my game is doing, just to clean it up further. Then, I will get rid of the System.out.printlns so the map coordinates and information are not shown while the game is running.

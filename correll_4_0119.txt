@@ -1,0 +1,8 @@
+	What slick game did you create?
+I created a game called "Deliverer" in which the character has to collect three different colored orbs in a small amount of time. My map is a small maze where the orbs are stashed around.
+	What challenges did you solve?
+I was able to successfully changre the original code to conform to my needs, such as changing the timer to count down instead of count up, as well as having the win and lose settings to be specific to my game.
+	Did you finish your map before Winter break?
+I did not finish my map before the break because I was still trying to find the different textures for the blocks and I still wanted to understand the game's story before creating a definitive setting and character. However it would have been much easier if I had done this before we started coding.
+	Were you able to meet the timeline?
+I was able to meet the timeline, but I did have to scale down the size and scope of my game to be able to complete it.

@@ -1,0 +1,7 @@
+Addison Correll's Journal 1116
+
+	How will you use methods in your game? Why?
+I will use methods in my game to seperate the main portions of the game, and possibly to have different actions and operations be seperated into methods as well. I would do this so I would not have to repeat the same processes again in each section and to have the code be much more organized. An example of this would be static void itemsCarried that would individually keep track of the items the player has picked up, that will be called upon in the other methods when need be for the character to use these items.
+	What values will you pass to them?
+For my method itemsCarried, the values that would be passed to it would probably be just booleans that identify if the player has picked up a certain item or not.
+ 

@@ -1,0 +1,15 @@
+Addison Correll's Journal 1019
+
+	Are you almost done with your methods? Why or why not?
+I am not close to finished because I had an idea in mind to create this art project, but the ideas I were thinking of were more work intensive and harder to implement in JavaFX. I know I need some more time an explanations if I am going to get this done in the way I was initially planning to do it.
+	Describe what you did the days we went over art methods. What did you write/type? What were your thoughts?\
+When we went over the art methods, I did write some things down that I felt were going to help me with my very specific plans, but I should have written the other notes down because they could have benn very helpful if I was going to redo this project in an easier fashion in the way the project was intended to be created. I was confused when we went over the art project because I felt that the information given was extremely different from what I was planning top do, which it was, so I did not know what to make of most of the information that was given.
+	Did you notice that art method code was shared in the journals? Why or why not?
+I did notice that there was reference code on the journals page because I check the page everyday to check and see if there is a journal.
+	Have you examined the example code on github? Why or why not?
+I have examined the example code on github because I needed help with my own code, and the code given was a very good reference.
+	Write a sample method for making a sequence of red squares on the canvas.
+private void drawRsquare(GraphicsContext gc) {
+	gc.setFill(Color,RED);
+	gc.fillRect(10, 10, 30, 30);
+}

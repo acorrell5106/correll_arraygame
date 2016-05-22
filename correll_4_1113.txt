@@ -1,0 +1,6 @@
+Addison Correll's Journal 1113
+
+	How will you use while loops in your game? Why?
+I will use while loops in my game to have questions be repeated, and maybe to just repeat the entire game itself. I will use them because they will allow the game/question to repeat until one of the requirements are met.
+	How will you use methods in your game? Why?
+I will use methods in my game that will serve as different sections of the game, and possibly different problems. I will use them because they will make my game much more organized and it will be easier to use them all together.

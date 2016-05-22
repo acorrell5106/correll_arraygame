@@ -1,0 +1,6 @@
+Addison Correll Journal 0911
+	
+	What is pseudocode - What is it good for?
+Pseudocode is good for writing out plans for code, almost like an outline to our final code. However, we have also used it to draw shapes using simple steps, as well as setting numbers and even equations. Pseudocodes seem to be more user friendly than computer friendly, so that we will use this type of code to explain something we wish to do with code. 
+	More speifically, why will we use it?
+I believe we will use psuedocode to aid us in our way to writing normal code, as well as to solve problems, as in this case write our names with code.

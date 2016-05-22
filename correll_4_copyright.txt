@@ -1,0 +1,32 @@
+Addison Correll Copyright Notes
+
+Copyright - the legal right given to a originator or a creator to be able to create their works, into many forms, without others being able to do the same. 
+Copyleft - the method of making a creation free to use and recreate, as long as the new creation is bound by the same condition.
+Fair Use - the ability to quote on a copyright material in certain circumstances that does not require permission from the creator.
+Free Speech - the ability to say whatever you wish, within legal reason.
+Free Software - software that is available to public without pay, and allows the user to share and modify the software. Like free speech, free software allows the user to say, or in this case, do whatever they wish, within legal reason.
+Freeware - like free software, freeware is free to the user. However, freeware is not allowed to be shared among others and is not allowed to modified, in most cases.
+Public Domain - the works of others that have expired or inapplicable property rights, making these creations free to the public. 
+File-sharing - the ability to transfer, or share, files over a network or over the Internet.
+Piracy - the illegal act of recreating a work that is copyrighted, without owning said rights.
+Plagiarism - like piracy, plagiarism is the act of recreating one's works withought the copyrights. However, plagiarism takes it a step further by acting as if the recreation was original, and that the person who performed the act is the owner of said creation.
+Infringement - the act of violating legal terms or agreements. 
+Proprietary - the owner or ownership of a creation or brand.
+Open Source - like free software, open source allows the code of a software to be free to the user.
+GNU GPL License - a copyleft software that is the most widely used free software license.
+MIT License - a free software license that originates from the Massachusetts Institute of Technology.
+Apache License - a free software license that was created by the Apache Software Foundation.
+EULA - an end user license agreement that is a legal contract defining a software's rights and restrictions.
+Creative Commons - a non-profit organization that aims to expand the amount of free software available to the public legally.
+
+Questions
+1. (Where) have you seen this license before?
+I have seen very little of this license before this class, but I now know that GNU is related to Linux in that it is an operating sysytem that works with Linux in a similar manner.
+2. What is it saying?
+The license is saying that the software is free as in freedom, allowing the software to be modified, shared, and studied, but is not exactly "free" when it comes to price. Also, you have to continue with the open source policy, so everything you create has to be open to the public. 
+3. What implications does this license have for the author? For the user?
+This license implicates that the author will allow the user to control the program, not the author controlling the program, which then controls the user. This means that the author may create something, but his or her creation should be available to the public to allow them to share in that creation and make it their own. The implications towards the user are that they are able to create anything they wish with the software, and in turn becoming an author of their own creations, putting them under the same concept that everything should be free to access and to modify. 
+4. When would you use this license?
+You would you use this license if you wanted to have the ability to alter software to your liking, instead of having someone else controlling you. Also, if you created something, you would be willing to share this knowledge and creation with others so they could learn and create as well.
+5. When would you not use this license?
+You would most likely not use this license if you wanted to be under the eye of the author, instead of having the freedom to do things yourself. So, if you do not want to create anything new and are fine using someone else's software to get what you need done, then you don't need to use GNU. Also, if you wanted to be the sole author of a creation, then GNU is not for you because GNU encourages the sharing of creations and the freedom that comes with having creations to improve upon, not the idea of a single creator. 

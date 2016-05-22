@@ -1,0 +1,4 @@
+Addison Correll's Journal 1005
+
+	What are CODE COMMENTS? What are they good for?
+Code comments are little comments inputted into code that is like a small note for the code that a person writes, making code much easier to understand for the user. 

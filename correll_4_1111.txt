@@ -1,0 +1,8 @@
+Addison Correll Journal's 1111
+
+	In your game, what challenges must your player solve?
+The player is going to have to solve many little challenges along the way to the ultimate goal. I don't think I'm going to have any large "boss" challenges in the game, but the challenges you do have to face will be very consistent and varied in their content. For example, you may get a flat tire and have to go into an abondoned sore to try and find one. Maybe this problem will lead to another, and anothers, and so on and so forth.
+	How will you specifically track whether they have been solved?
+I will use booleans for each specific task and it will track and see if the player has accomplished the task or not.
+	Provide variable names and types. Classes if applicable.
+Some variables I will use will be strings, ints, and booleans, such as "playername", "hp" and "kp" (karma points), and "dogfood". I will most likely create a class for my character and their stats, as well as having a couple more for the possible followers in the game.

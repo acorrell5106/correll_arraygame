@@ -1,0 +1,8 @@
+Addison Correll's Journal 0921
+
+	Have you recieved credit for all journals?
+Yes, but most of my journals are 95s, making my average to around 96, and I would definently like to bump up that average and aim for a 100. Other than that, everything is fine grade-wise.
+	Why is it important that you use the naming convention specified when naming files?
+It is important to name your files in a specific way so you, and others, will know whose work it is so they will be able to grade it, or do other things with it.
+	What is the command to copy in Linux? To copy all of a directory to the current directory?
+The command to copy in Linux is cp, which will identify a file or files and copy them to wherever you specify. So, you type "cp file_name" and then "new_location" to copy a file and send it to wherever you want it.

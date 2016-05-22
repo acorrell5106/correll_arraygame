@@ -1,0 +1,4 @@
+Addison Correll's Journal 0915
+
+	What is an IDE, and what is it good for?
+An IDE, or an integrated development enviornment, allows you to write code and open software withn a single program. An example of an IDE would be Netbeans and Processing because they allow you to write different kinds of code, and allows you to create programs within a program (programception). This will be good to use in this class because it will allow us to make things when coding simpler.

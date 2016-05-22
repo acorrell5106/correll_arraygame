@@ -1,0 +1,7 @@
+Addison Correll's Journal 0929
+
+	What are methods? What are they good for?
+Methods are subroutines associated with an object of a class, and allows members that are not private members to be able to access the object's interface. 
+	How can you use methods to find primes?
+You can use methods to find primes by checking an integer occasional in one system by implementing the method into the larger system, allowing you to check multiple divisors without them getting all mixed up, identifying the primes in the process. 
+

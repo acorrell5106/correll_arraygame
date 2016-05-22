@@ -1,0 +1,2 @@
+	What is this? Is it a class or a method? How do you know?
+I think this is a method because it has (), unlike a class. Also, render is not capitalized, so it is not a class.

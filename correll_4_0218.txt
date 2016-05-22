@@ -1,0 +1,18 @@
+	Explain this code:
+This code sets up the spritesheet for the player class and also all of the frames for the character's movement.
+	Why would it be unrealistic/unproductive to memorize Slick syntax - what are the skills we are trying to practice?
+It would be unrealistic to memorize Slick syntax because we are trying to learn to solve problems through the basic knowledge we have, and not through our memorization of a certain syntax.
+	What is an array?
+An array is a list of things, whether it be ints or Strings.
+	How do you make an array? Give an example,
+To make an array, you would write either int[] or String[], then the name of the array, then you would write = new int[]String[];. However, you could just fill in what the array is, such as = {"Hello", "World", "!"};.
+	What is an ArrayList?
+An ArrayList is like an array, but unlike the array, the ArrayList can have more things added to the list instead of having a static amount of things in the list.
+	How do you make an ArrayList?
+To make an ArrayList, you would write ArrayList<int/String> obj = new ArrayList<int/String>();.
+	What are some useful ArrayList methods that you identified?
+Some of the methods I saw that were useful were add and remove. Add will add another variable to the list, and subtract will take one away.
+	What is the difference between an array and an ArrayList?
+The ArrayList can have more things added to the list instead of having a static amount of things in the list, like an array.
+	How could we make a health counter for an avatar?
+To make a health counter for an avatar, we could have an array or an ArrayList that has numbers 1-100, and then we could count that number down everytime the player loses health, by calling upon the list with the specific number.

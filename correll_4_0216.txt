@@ -1,0 +1,4 @@
+	How was an array used in your Slick game?
+An example of an array was used in our game to keep track of all of the tiles, and to see if they were blocked.
+	What might be another use for an array in a different program?
+We could possibly use an array for a program that lists different names from the array, and pairs them with other words from a separate array.

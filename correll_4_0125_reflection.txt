@@ -1,0 +1,2 @@
+Describe your problem solving/trouble shooting process.
+If I had a problem that needed to be solved, I would look around in my code for similar instances of what I was trying to do, or I would search around for similar keywords. If neither of those worked, I would try and tinker around to see if I could get something to change in the game. If this failed, I would ask those around me if they were able to do something similar to what I would want to do. If this failed, I would ask Mr. Davis for help on the issue.

@@ -1,0 +1,6 @@
+	Are you ready for the test on Friday?
+I think I will be ready for the test on Friday, but I know I will need to study up some more to make sure I know as much as I can.
+	What specific questions do you have about the Slick Game?
+I am a little unsure of how to create multiple levels for my game, but I will look at how the first level was made to try and figure it out. Will I need to create a seperate class for the entire level?
+	Are you prepared? Do you have all the knowledge you need?
+I think I will be able to achieve all of these goals, but I think that some of these goals will be much more difficult than others, such as creating the seperate levels.
